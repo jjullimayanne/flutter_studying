@@ -4,7 +4,7 @@ import 'package:ride4u_mobile/features/auth/domain/repositories/auth_repository.
 
 class AuthRepositoryImpl implements AuthRepository {
   final LocalStorage localStorage;
-  final Network network;
+  final HttpClient network;
 
   AuthRepositoryImpl({
     required this.localStorage,
